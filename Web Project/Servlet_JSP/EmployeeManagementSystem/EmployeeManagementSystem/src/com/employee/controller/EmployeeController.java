@@ -14,6 +14,9 @@ public class EmployeeController extends HttpServlet {
 
 		String uname = req.getParameter("uname");
 		String password = req.getParameter("pass");
-		
+		if() {
+			req.setAttribute("uname",uname);
+			
+		}
 	}
 }
