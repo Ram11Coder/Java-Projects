@@ -8,6 +8,12 @@ import java.sql.SQLException;
 
 public class EmployeeDao {
 
+	private static EmployeeDao dao = new EmployeeDao();
+
+	public static EmployeeDao getInstance() {
+		return dao;
+	}
+
 	String sql = "select * from login where uname=? and pass=?";
 	String url = "jdbc:mysql://localhost:3306/abc";
 	String uname = "root";
